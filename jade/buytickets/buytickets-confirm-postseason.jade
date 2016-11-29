@@ -1,0 +1,22 @@
+extends buylayout
+
+block active
+    -var active = 'My Dashboard';
+
+block title
+    | Opt-in Confirmation
+
+block content
+    h2.bold Opt-in Confirmation
+    hr
+    
+    .row
+        .col-xs-12
+            p
+                | You have successfuly opted in for the selected postseason games, and your confimation number 
+                | is CA2WED660MHDU40. You will be notified by email if you receive a postseason ticket.
+                
+    br
+    .row    
+        .col-sm-4.col-xs-12
+            a.btn.btn-default.btn-lg.btn-block(href="buytickets-index.html" role="button") Return to My Dashboard

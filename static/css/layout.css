@@ -1,0 +1,94 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    font-family: 'Roboto', 'Helvetica', 'Arial';
+    font-size: 15px;
+    background-color: #FCFFFC;
+    margin-bottom: 50px;
+}
+
+.navbar{
+    border: none;
+}
+
+.navbar-default {
+    background: #900f0f;
+    color: #FCFFFC;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #a71137;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #a71137;
+    color: #FCFFFC;
+}
+
+.navbar-default .navbar-brand {
+    color: #FCFFFC;
+    letter-spacing: 1px;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #FCFFFC;
+    cursor: default;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #FCFFFC;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #900f0f;
+    background-color: #FCFFFC;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    background-color: #900f0f;
+    border: none;
+}
+
+.footer > .container {
+    text-align: center;
+    font-size: 12px
+}
+
+.footer > .container > p {
+    margin-top: 10px;
+    color: #FCFFFC;
+    line-height: 1;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;   
+}
+
+.text-center {
+    text-align: center;
+}
+
+.action-btn {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.text-muted {
+    font-size: 14px;
+}

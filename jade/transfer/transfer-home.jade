@@ -1,0 +1,68 @@
+extends ../userlayout
+
+block active
+    -var active = 'Transfer Tickets';
+
+block title
+    | Transfer
+
+block css 
+   link(rel="stylesheet" type="text/css" href="static/libs/datatables-1.10.11/css/dataTables.bootstrap.min.css")
+   link(rel='stylesheet', href='static/libs/datatables-1.10.11/css/dataTables.fontAwesome.css')
+
+block content
+   h2.bold Transfer Tickets
+   hr
+   
+   .row
+       .col-xs-12
+           h3.bold Transfer a future home game ticket:
+           p.text-muted
+               | The following table shows all home game tickets that you currently own. If you 
+               | choose to transfer or donate one of these tickets it will not be availabe to 
+               | the recipient until 1pm, the Sunday before the game week.
+           table#homeTable.table(cellspacing="0" width="100%")
+               thead
+                   tr
+                       th
+                       th Date
+                       th Opponent
+                       th Average Price
+                       th Seating Bowl
+                       th Donate
+                       th Transfer
+               tbody
+                   tr
+                       td
+                       td 11/12/2016
+                       td Mississippi State
+                       td $40.78
+                       td Lower Bowl
+                       td 
+                           a.btn.btn-danger.btn-sm.btn-block(href="donate.html" role="button") Donate ticket
+                       td
+                           a.btn.btn-danger.btn-sm.btn-block(href="transfer.html" role="button") Transfer ticket
+                   tr
+                       td
+                       td 11/19/2016
+                       td Chattanooga
+                       td $7.55
+                       td Lower Bowl
+                       td 
+                           a.btn.btn-danger.btn-sm.btn-block(href="donate.html" role="button") Donate ticket
+                       td
+                           a.btn.btn-danger.btn-sm.btn-block(href="transfer.html" role="button") Transfer ticket
+                   tr
+                       td
+                       td 11/26/2016
+                       td Auburn
+                       td $195.43
+                       td Lower Bowl
+                       td 
+                           a.btn.btn-danger.btn-sm.btn-block(href="donate.html" role="button") Donate ticket
+                       td
+                           a.btn.btn-danger.btn-sm.btn-block(href="transfer.html" role="button") Transfer ticket
+
+block js
+    script(type="text/javascript" src="static/libs/datatables-1.10.11/js/datatables.min.js")
+    script(src='static/js/transfer-home.js')  

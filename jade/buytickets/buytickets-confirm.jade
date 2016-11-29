@@ -1,0 +1,23 @@
+extends buylayout
+
+block active
+    -var active = 'My Dashboard';
+
+block title
+    | Confirmation
+
+block content
+    h2.bold Confirmation
+    hr
+    
+    .row
+        .col-xs-12
+            p
+                | The agreed upon charge has been added to your student account, and a confimation email
+                | has been sent to your @crimson.ua.edu email address. You will be able to see the tickets
+                | you own on My Dashboard once the fall semester begins. 
+                
+    br
+    .row    
+        .col-sm-4.col-xs-12
+            a.btn.btn-default.btn-lg.btn-block(href="buytickets-index.html" role="button") Return to My Dashboard

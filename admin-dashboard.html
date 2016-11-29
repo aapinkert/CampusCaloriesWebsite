@@ -1,0 +1,63 @@
+
+<!--output: layout.html--><!DOCTYPE html>
+<html>
+  <head>
+    <title>MyTickets Admin -  Dashboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,800" rel="stylesheet">
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--font-awesome css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <!--layout.css-->
+    <link rel="stylesheet" href="./static/css/layout.css">
+    <!--allows for responsive viewing on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#navbar1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle Navigation</span><span class="glyphicon glyphicon-option-vertical">  </span></button>
+          <div class="navbar-brand">MyTickets</div>
+        </div>
+        <div id="navbar1" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="admin-dashboard.html" title="Admin Dashboard">Admin Dashboard</a></li>
+            <li><a href="admin-exchangeinfo.html" title="Recent Exchange Transfers">Recent Ticket Transfers</a></li>
+            <li><a href="admin-settickets.html" title="Set Ticket Allotment">Set Ticket Allotment</a></li>
+            <li><a href="admin-ticketinfo.html" title="Student Ticket Statstics">Student Ticket Statistics</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+
+      <h2 class="bold">This Week's Game:</h2>
+      <div class="row">
+        <div class="col-sm-1 col-xs-3"><img id="tean-helment" src="http://cdn.fbschedules.com/images/helmets-ncaa/t-z/texas_am1.gif"></div>
+        <div class="col-sm-11 col-xs-9">
+          <h4>Texas A&M Aggies,</h4>
+          <p class="text-muted">
+
+            Saturday Oct. 22 | 2:30pm CT | Bryant-Denny Stadium, Tuscaloosa, AL
+          </p>
+        </div>
+      </div>
+      <h2 class="bold">Available Administrative Options:</h2>
+      <div class="row">
+        <div class="col-sm-6 col-xs-12"><a href="admin-exchangeinfo.html" role="button" class="action-btn btn btn-primary btn-block">View Recent Ticket Transfers</a></div>
+        <div class="col-sm-6 col-xs-12"><a href="admin-settickets.html" role="button" class="action-btn btn btn-primary btn-block">Set Ticket Allotment</a></div>
+        <div class="col-sm-6 col-xs-12"><a href="admin-ticketinfo.html" role="button" class="action-btn btn btn-primary btn-block">View Student Ticket Statistics</a></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p>myTickets Prototype Interface | cs407</p>
+      </div>
+      <!--jquery js-->
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+      <!--bootstrap js-->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </footer>
+  </body>
+</html>
