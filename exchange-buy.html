@@ -1,0 +1,101 @@
+
+<!--output: layout.html--><!DOCTYPE html>
+<html>
+  <head>
+    <title>MyTickets -  Buy Ticket</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,800" rel="stylesheet">
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--font-awesome css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <!--layout.css-->
+    <link rel="stylesheet" href="./static/css/layout.css">
+    <!--allows for responsive viewing on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#navbar1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle Navigation</span><span class="glyphicon glyphicon-option-vertical">  </span></button>
+          <div class="navbar-brand">myTickets</div>
+        </div>
+        <div id="navbar1" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html" title="My Dashboard">My Dashboard</a></li>
+            <li><a href="transfer-home.html" title="Transfer Tickets">Transfer Tickets</a></li>
+            <li class="active"><a href="exchange.html" title="Exchange Tickets">Exchange Tickets</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h2 class="bold">Buy Ticket:</h2>
+      <hr>
+      <h4>Texas A&M vs. Alabama</h4>
+      <p class="text-muted">Saturday Oct. 22 | 2:30pm CT | Bryant-Denny Stadium, Tuscaloosa, AL </p>
+      <h4 class="bold">Selected Ticket:</h4>
+      <div class="row">
+        <div class="col-sm-6 col-xs-12">
+          <table class="table table-bordered">
+            <thead>
+              <tr class="active">
+                <th>Seating Bowl</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lower</td>
+                <td>$68</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-xs-12">
+          <p class="bold">Terms and Conditons:</p>
+          <div class="well">
+            <p class="text-muted">
+              This ticket will be transfered to your myTickets account immediatly, and the
+              charge will be added to your student account. If you choose not to go to the
+              game you will recieve 2 penatly points. If you transfer this ticket after 5pm
+              Wednesday you will recieve 0.5 penalty points. If you want to upgrade this ticket
+              please go to the Athletics Ticket Office in Coleman Coliseum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="checkbox">
+            <label>
+              <input id="checkboxConfirm" type="checkbox">I understand the above terms and conditions
+            </label>
+          </div>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="bold">Are you sure you want to buy this ticket?</p><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 col-xs-6"><a id="confimationBtn" href="exchange-buy-confirm.html" role="button" class="btn btn-primary btn-lg btn-block">Confirm</a></div>
+        <div class="col-sm-3 col-xs-6"><a href="exchange.html" role="button" class="btn btn-default btn-lg btn-block">Go Back</a></div>
+      </div><br>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p>myTickets Prototype Interface | cs407</p>
+      </div>
+      <!--jquery js-->
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+      <!--bootstrap js-->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+      <script src="static/js/exchange-buy.js"> </script>
+    </footer>
+  </body>
+</html>

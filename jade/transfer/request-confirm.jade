@@ -1,0 +1,32 @@
+extends ../userlayout
+
+block active
+    -var active = 'Donate Ticke';
+
+block title
+    | Request Confirmation
+
+block content
+    h2.bold Request Confirmation
+    hr
+    
+    .row
+        .col-xs-12
+            p
+                | You have requested a ticket and have been added to the waitlist for the upcoming home 
+                | football game.  Your confirmation number is NJZKRO33Z9EMMWY.  Once on the waitlist, you 
+                | remain eligible to receive a donated ticket through the start of halftime for the upcoming 
+                | home game unless you receive a transferred ticket or remove yourself from the waitlist. This 
+                | receipt does not verify actual receipt of a ticket. If a donated ticket becomes available, 
+                | you will receive a separate email verifying receipt of a donated ticket swipe for the 
+                | upcoming home football game. Donated tickets are assigned upper or lower deck based on the 
+                | status of the ticket received from the waitlist.
+            p
+                | Login to MyTickets at any time to verify your balance and, should you receive a ticket, 
+                | whether your ticket assignment is upper or lower deck and the gate assignment prior to 
+                | arriving at the stadium.  Students who enter at the wrong gate will be turned away and have 
+                | to get in line at the correct gate.
+    br
+    .row    
+        .col-sm-4.col-xs-12
+            a.btn.btn-default.btn-lg.btn-block(href="index.html" role="button") Return to My Dashboard

@@ -1,0 +1,130 @@
+extends buylayout
+
+block active
+    -var active = 'My Dashboard';
+    -var checked = undefined
+
+block title
+    | My Dashboard
+
+block css
+    link(rel="stylesheet" type="text/css" href="static/libs/datatables-1.10.11/css/dataTables.bootstrap.min.css")
+    link(rel='stylesheet', href='static/libs/datatables-1.10.11/css/dataTables.fontAwesome.css')
+
+block content
+    h2.bold Buy Home Game Ticket Package:
+    hr
+    .row
+        .col-sm-6.col-xs-12
+            h3.bold Package A
+            table.packageTable.table(cellspacing="0" width="100%")
+                thead  
+                    tr
+                        th 
+                        th Date
+                        th Opponent
+                        th Price
+                tbody
+                    tr
+                        td
+                        td 09/10
+                        td Western Kentucky
+                        td $10
+                    tr
+                        td
+                        td 10/01
+                        td Kentucky  
+                        td $10
+                    tr
+                        td 
+                        td 11/12
+                        td Mississippi State
+                        td $10
+                    tr
+                        td
+                        td 11/19 
+                        td Chattanooga
+                        td $10  
+                    tr
+                        td
+                        td.bold Total Price:
+                        td
+                        td.bold $40
+        .col-sm-6.col-xs-12
+            h3.bold Package B
+            table.packageTable.table(cellspacing="0" width="100%")
+                thead  
+                    tr
+                        th 
+                        th Date
+                        th Opponent
+                        th Price
+                tbody
+                    tr
+                        td
+                        td 09/24
+                        td Kent State
+                        td $10
+                    tr
+                        td
+                        td 10/22
+                        td Texas A&M
+                        td $10
+                    tr
+                        td
+                        td 11/26
+                        td Auburn
+                        td $10
+                    tr
+                        td
+                        td.bold Total Price:
+                        td
+                        td.bold $40
+    br
+    .row
+        .col-sm-6.col-xs-12
+            .bold Select which package you want to buy:
+            .radio
+                label
+                    input(type="radio" name="radioPackages" id="radiopackage1")
+                    | Package A
+            .radio
+                label
+                    input(type="radio" name="radioPackages" id="radiopackage1")
+                    | Package B
+            .radio
+                label
+                    input(type="radio" name="radioPackages" id="radiopackage1")
+                    | Both Packages
+    br
+    .row
+        .col-sm-6.col-xs-12
+            p.bold Terms and Conditons:
+            .well
+                p.text-muted
+                    | All home game student tickets are $10. The total purchase amount will be 
+                    | charged to your student account. Entering freshman may only select one ticket 
+                    | package. Upperclassman may select both ticket packages. All tikcet packages 
+                    | requre a $6 handeling fee.
+    .row
+        .col-sm-6
+            .checkbox
+                label
+                    input#checkboxConfirm(type="checkbox") 
+                    | I understand the above terms and conditions
+    br
+    .row
+        .col-sm-6
+            p.bold Are you sure you want to buy this ticket package?
+            br
+    .row 
+        .col-sm-3.col-xs-6
+            a#confimationBtn.btn.btn-primary.btn-lg.btn-block(href="buytickets-confirm.html" role="button") Confirm
+        .col-sm-3.col-xs-6
+            a.btn.btn-default.btn-lg.btn-block(href="buytickets-index.html" role="button") Go Back
+    br
+
+block js
+    script(type="text/javascript" src="static/libs/datatables-1.10.11/js/datatables.min.js")
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js')
+    script(src='static/js/buytickets-home.js') 
