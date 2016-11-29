@@ -2,7 +2,7 @@
 <!--output: layout.html--><!DOCTYPE html>
 <html>
   <head>
-    <title>Login -  Dashboard</title>
+    <title>CampusCalories Admin -  Store Info</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,800" rel="stylesheet">
     <!--bootstrap css-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="./static/css/layout.css">
     <!--allows for responsive viewing on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="static/libs/datatables-1.10.11/css/dataTables.bootstrap.min.css">
-    <link rel="stylesheet" href="static/libs/datatables-1.10.11/css/dataTables.fontAwesome.css">
   </head>
   <body>
     <nav class="navbar navbar-default navbar-static-top">
@@ -22,22 +20,58 @@
           <button type="button" data-toggle="collapse" data-target="#navbar1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle Navigation</span><span class="glyphicon glyphicon-option-vertical">  </span></button>
           <div class="navbar-brand">CampusCalories</div>
         </div>
-        <div id="navbar1" class="collapse navbar-collapse">
-        </div>
       </div>
     </nav>
     <div class="container">
-      <h2 class="bold">Login to your CampusCalories Account</h2>
+      <h2 class="bold">CampusCalories Registration Form:</h2>
       <h2></h2>
-      <h4>Username:</h4>
+      <h4>Store Name</h4>
+      <form name="input"method="get"> <input type="text" /> </form>
+      <h4>Store Address</h4>
       <form name="input" method="get"> <input type="text" /> </form>
-      <h4>Password:</h4>
-      <form name="input" action='admin-dashboard.html' method="get"> <input type="password" /> <input type="submit" class="btn btn-primary btn-sm" value="Submit" /> </form>
+      <form name="input" method="get"> <input type="text" /> </form>
+      <h4>Store Owner's First Name</h4>
+      <form name="input"method="get"> <input type="text" /> </form>
+      <h4>Store Owner's Last Name</h4>
+      <form name="input" method="get"> <input type="text" /> </form>
+      <h4>Store Owner's Phone Number (e.g. (XXX)-XXX-XXXX)</h4>
+      <form name="input"method="get"> <input type="text" /> </form>
+      <h4>Store Owner's Email Address</h4>
+      <form name="input" method="get"> <input type="text" /> </form>
+      <h4>Verification Code</h4>
+      <form name="input" method="get"> <input type="text" /> </form>
       <h2></h2>
-      <h2 class="bold">Don't Have an Account? Register here</h2>
-      <div class="row">
-        <div class="col-sm-6 col-xs-12"><a href="register.html" role="button" class="action-btn btn btn-primary btn-block">Fill out a registration form</a></div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="checkbox">
+              <label>
+                <input id="checkboxConfirm" type="checkbox">This store will offer vegetarian options
+              </label>
+            </div>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="checkbox">
+              <label>
+                <input id="checkboxConfirm" type="checkbox">This store will offer gluten-free options
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="checkbox">
+              <label>
+                <input id="checkboxConfirm" type="checkbox">This store will offer <500 calorie options
+              </label>
+            </div>
+          </div>
+        </div>
+        <h2></h2>
+        <div class="row">
+          <div class="col-sm-6 col-xs-12"><a href="register-confirm.html" role="button" class="action-btn btn btn-primary btn-block">Submit Registration</a></div>
+          </div>
     </div>
     <footer class="footer">
       <div class="container">
@@ -47,8 +81,6 @@
       <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
       <!--bootstrap js-->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-      <script type="text/javascript" src="static/libs/datatables-1.10.11/js/datatables.min.js"></script>
-      <script src="static/js/index.js">   </script>
     </footer>
   </body>
 </html>

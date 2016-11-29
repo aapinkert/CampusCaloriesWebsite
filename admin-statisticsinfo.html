@@ -2,7 +2,7 @@
 <!--output: layout.html--><!DOCTYPE html>
 <html>
   <head>
-    <title>MyTickets Admin -  Set Ticket Allotment</title>
+    <title>CampusCalories Admin -  Store Statistics</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,800" rel="stylesheet">
     <!--bootstrap css-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -18,35 +18,32 @@
       <div class="container">
         <div class="navbar-header">
           <button type="button" data-toggle="collapse" data-target="#navbar1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle Navigation</span><span class="glyphicon glyphicon-option-vertical">  </span></button>
-          <div class="navbar-brand">MyTickets</div>
+          <div class="navbar-brand">CampusCalories</div>
         </div>
         <div id="navbar1" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="admin-dashboard.html" title="Admin Dashboard">Admin Dashboard</a></li>
-            <li><a href="admin-exchangeinfo.html" title="Recent Exchange Transfers">Recent Exchange Transfers</a></li>
-            <li class="active"><a href="admin-settickets.html" title="Set Ticket Allotment">Set Ticket Allotment</a></li>
-            <li><a href="admin-ticketinfo.html" title="Student Ticket Statstics">Student Ticket Statistics</a></li>
-          </ul>
+            <li><a href="admin-viewstoreinfo.html" title="View Store Info">View Store Information</a></li>
+            <li><a href="admin-addstoreinfo.html" title="Add Store Info">Add Store Information</a></li>
+            <li class="active"><a href="admin-statisticsinfo.html" title="View Store Statstics">View Store Statistics</a></li>
+            </ul>
         </div>
       </div>
     </nav>
+
     <div class="container">
-      <h2 class="bold">Set Ticket Allotment for Remaining Games:</h2>
-      <h4>Mississippi State vs. Alabama</h4>
-      <form name="input" action='admin-settickets-confirm.html' method="get"> <input type="text" /> <input type="submit" class="btn btn-primary btn-sm" value="Set" /> </form>
-      <h4>Chattanooga vs. Alabama</h4>
-      <form name="input" action='admin-settickets-confirm.html' method="get"> <input type="text" /> <input type="submit" class="btn btn-primary btn-sm" value="Set" /> </form>
-      <h4>Auburn vs. Alabama</h4>
-      <form name="input" action='admin-settickets-confirm.html' method="get"> <input type="text" /> <input type="submit" class="btn btn-primary btn-sm" value="Set" /> </form>
-      <h2 class="bold">Allotted Tickets for Previous Games:</h2>
-      <table id="statTable" cellspacing="0" width="100%" class="table">
+      <h2 class="bold">Game Ticket Info:</h2>
+      <table id="homeTable" cellspacing="0" width="100%" class="table">
         <thead>
           <tr>
             <th></th>
             <th>Date</th>
             <th>Opponent</th>
             <th>Location</th>
-            <th>Alloted Tickets</th>
+            <th>Alloted Tickets Set</th>
+            <th>Alloted Tickets Used</th>
+            <th>Tickets Exchanged</th>
+            <th>Total Exhange Amount</th>
           </tr>
         </thead>
         <tbody>
@@ -56,6 +53,9 @@
             <td>USC</td>
             <td>Away</td>
             <td>300</td>
+            <td>300</td>
+            <td>67</td>
+            <td>$743</td>
           </tr>
           <tr>
             <td></td>
@@ -63,6 +63,9 @@
             <td>Western Kentucky</td>
             <td>Home</td>
             <td>1200</td>
+            <td>1082</td>
+            <td>397</td>
+            <td>$1202</td>
           </tr>
           <tr>
             <td></td>
@@ -70,6 +73,9 @@
             <td>Ole Miss</td>
             <td>Away</td>
             <td>500</td>
+            <td>483</td>
+            <td>93</td>
+            <td>$920</td>
           </tr>
           <tr>
             <td></td>
@@ -77,6 +83,9 @@
             <td>Kent State</td>
             <td>Home</td>
             <td>1200</td>
+            <td>935</td>
+            <td>260</td>
+            <td>$543</td>
           </tr>
           <tr>
             <td></td>
@@ -84,6 +93,9 @@
             <td>Kentucky</td>
             <td>Home</td>
             <td>1200</td>
+            <td>1104</td>
+            <td>240</td>
+            <td>$803</td>
           </tr>
           <tr>
             <td></td>
@@ -91,6 +103,9 @@
             <td>Arkansas</td>
             <td>Away</td>
             <td>500</td>
+            <td>432</td>
+            <td>43</td>
+            <td>$743</td>
           </tr>
           <tr>
             <td></td>
@@ -98,13 +113,44 @@
             <td>Tennessee</td>
             <td>Away</td>
             <td>500</td>
+            <td>498</td>
+            <td>47</td>
+            <td>$843</td>
           </tr>
         </tbody>
       </table>
+      <h2 class="bold">Season Ticket Statistics:</h2>
+      <table id="statTable" cellspacing="0" width="100%" class="table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Total Tickets Usage</th>
+            <th>Average Tickets Usage</th>
+            <th>Average Number of Exchanges</th>
+            <th>Average Total Exchange Amount</th>
+            <th>Average Ticket Sell Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>4833/5400</td>
+            <td>89.5%</td>
+            <td>164</td>
+            <td>$828</td>
+            <td>$52</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row">
+        <div class="col-sm-6 col-xs-12"><a role="button" class="action-btn btn btn-primary btn-block">Export as a .csv file</a></div>
+        <div class="col-sm-6 col-xs-12"><a role="button" class="action-btn btn btn-primary btn-block">Export as a .xls file</a></div>
+      </div>
     </div>
+
     <footer class="footer">
       <div class="container">
-        <p>myTickets Prototype Interface | cs407</p>
+        <p>CampusCalories Prototype Interface | cs495</p>
       </div>
       <!--jquery js-->
       <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
